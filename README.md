@@ -25,16 +25,15 @@ Untuk mengatasi permasalahan tersebut, proyek *Data Science & HR Analytics* ini 
 
 #### 1. Struktur Direktori Proyek
 ```text
-Submission1_PDT/
+Penerapan-Data-Science/
 │
 ├── employee_data.csv               # Dataset utama kepegawaian
 ├── notebook.ipynb                  # Jupyter Notebook (EDA, Preprocessing, Modeling, Evaluation)
 ├── prediction.py                   # Script inferensi mandiri untuk prediksi turnover
 ├── requirements.txt                # Berkas dependensi Python
 ├── README.md                       # Dokumentasi lengkap proyek
-├── metabase.db.mv.db               # Database instance Metabase
 ├── nasich_dicoding-dashboard       # File screenshot business dashboard
-├── nasich_dicoding-video           # File video presentasi proyek
+proyek
 └── model/
     ├── model.joblib                # Serialized machine learning pipeline (Random Forest)
     └── model_meta.json             # Metadata fitur dan parameter model
@@ -51,40 +50,11 @@ pip install -r requirements.txt
 
 ## Business Dashboard
 
-Untuk membantu manajer HR memantau kondisi tenaga kerja dan mengintervensi faktor risiko sebelum terjadi pengunduran diri, dirancang sebuah **Business Dashboard** interaktif menggunakan **Metabase**.
+Untuk membantu manajer HR memantau dinamika tenaga kerja dan mengintervensi faktor risiko pengunduran diri secara real-time, dirancang sebuah **Business Dashboard** interaktif berbasis cloud menggunakan **Google Looker Studio**.
 
-### Akses Dashboard & Kredensial
-- **Tools Utama:** Metabase
-- **URL Akses:** `http://localhost:3000` (atau deployment server yang tersedia)
-- **Akun Reviewer:**
-  - **Username/Email:** `root@mail.com`
-  - **Password:** `root123`
-- **Database File:** `metabase.db.mv.db` telah diekspor dan dilampirkan pada direktori root proyek.
+- **Tautan Dashboard Publik:** [Link to Looker Studio Dashboard](https://datastudio.google.com/s/vCx8_JSsIdM)
 
-### Tata Letak & Komponen Visualisasi Dashboard
-Dashboard disusun secara ergonomis dalam 4 bagian utama:
 
-```
-+-----------------------------------------------------------------------------------------+
-| [Filter Bar: Departemen | Jabatan (Job Role) | Jenis Kelamin | Jenjang Pendidikan]      |
-+-----------------------------------------------------------------------------------------+
-| [Row 1: KPI Cards]                                                                      |
-| - Total Karyawan Aktif: 1,058      - Attrition Rate Historis: 16.9% (Target: <10%)      |
-| - Estimasi Karyawan Berisiko: 56   - Kesenjangan Gaji (Bertahan vs Keluar): $1,822      |
-+-----------------------------------------------------------------------------------------+
-| [Row 2: Faktor Operasional & Peran Pekerjaan]                                           |
-| - [Chart Bar] Attrition Rate: Lembur (OverTime 31.9%) vs Tidak Lembur (10.8%)          |
-| - [Horizontal Bar] Attrition Rate per Job Role (Sales Rep 43.1%, Lab Tech 26.1%)       |
-+-----------------------------------------------------------------------------------------+
-| [Row 3: Finansial & Kompensasi]                                                         |
-| - [Grouped Bar] Attrition Rate per Job Level (Job Level 1 Tertinggi: 27.4%)             |
-| - [Donut/Bar Chart] Pengaruh Opsi Saham (Stock Option Level 0: 25.7% vs Level 1-2: <10%)|
-+-----------------------------------------------------------------------------------------+
-| [Row 4: Kesejahteraan & Pola Masa Kerja]                                                |
-| - [Heatmap/Matrix] Kepuasan Lingkungan & Work-Life Balance vs Risiko Turnover           |
-| - [Area/Line Chart] Kurva Masa Kerja (Tenure Decay: Puncak Resign pada Tahun ke-1 s/d 3)|
-+-----------------------------------------------------------------------------------------+
-```
 
 1. **Section 1 - Executive KPI Summary Cards:**
    - *Total Active Employees*: Jumlah keseluruhan karyawan aktif saat ini.
