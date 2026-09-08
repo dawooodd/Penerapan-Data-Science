@@ -27,7 +27,7 @@ Proyek *Data Science & HR Analytics* ini mencakup tahapan *end-to-end* sebagai b
 
 Untuk membantu manajer HR dan jajaran manajemen memonitor dinamika tenaga kerja serta mengidentifikasi faktor pemicu pengunduran diri secara *real-time*, telah dibangun business dashboard interaktif menggunakan **Google Looker Studio**.
 
-- **Tautan Akses Dashboard:** [Tautan Looker Studio] (https://datastudio.google.com/s/hH7lVIotteQ)
+- **Tautan Akses Dashboard:** [Tautan Looker Studio](https://datastudio.google.com/s/hH7lVIotteQ)
 
 Dashboard ini memvisualisasikan faktor-faktor utama pemicu attrition (*attrition drivers*), antara lain:
 1. **Executive KPI Scorecards:** Menampilkan Total Karyawan Aktif, Baseline Attrition Rate (16.9% vs Batas Toleransi 10%), Total Karyawan Resign, dan Kesenjangan Kompensasi.
