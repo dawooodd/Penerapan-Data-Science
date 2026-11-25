@@ -1,6 +1,6 @@
 # Proyek Akhir: Menyelesaikan Permasalahan Human Resources - Jaya Jaya Maju
 
-## Business Understanding
+##Business Understanding
 
 ### Latar Belakang
 Jaya Jaya Maju merupakan salah satu perusahaan multinasional terkemuka yang telah berdiri sejak tahun 2000. Saat ini, perusahaan telah berkembang pesat dan menaungi lebih dari 1.000 karyawan yang tersebar di berbagai unit operasional di seluruh penjuru negeri. Sebagai entitas korporasi berskala besar, pengelolaan modal manusia (*Human Capital*) yang efektif memegang peranan fundamental dalam menjaga stabilitas kinerja bisnis, efisiensi operasional, serta daya saing korporasi.
